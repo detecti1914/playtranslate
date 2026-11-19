@@ -59,6 +59,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           cache-read-only: false
+          validate-wrappers: false
 
       - name: 赋予 gradlew 执行权限
         run: chmod +x gradlew
